@@ -1,0 +1,159 @@
+<html>
+<head>
+    <title>Simple Reddcoin Widget</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+    <style type="text/css">
+
+        #reddContainer {
+            margin: 100px;
+            width: 275px;
+            height: 53px;
+            position: relative;
+        }
+
+        #coinbackground {
+            background-color: #fafafa;
+            border: 1px solid #e9eaee;
+            width: 275px;
+            height: 53px;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 15px;
+            font-weight: bold;
+            color: #3a3a3a;
+            position: relative;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+            #coinbackground:hover {
+                cursor: pointer;
+            }
+
+        #accepted {
+            position: absolute;
+            left: 16px;
+            top: 8px;
+            width: 230px;
+            -moz-transition: all 2s ease;
+            -webkit-transition: all 2s ease;
+            -o-transition: all 2s ease;
+            -ms-transition: all 2s ease;
+            transition: all 2s ease;
+            background-color: #fafafa;
+            padding: 10px 29px;
+        }
+
+        #coin {
+            position: absolute;
+            height: 59px;
+            left: -28px;
+            top: -3px;
+            width: 59px; 
+            z-index: 2;
+            -moz-transition: all 2s ease;
+            -webkit-transition: all 2s ease;
+            -o-transition: all 2s ease;
+            -ms-transition: all 2s ease;
+            transition: all 2s ease;
+        }
+
+        #reddContainer:hover > #coinbackground > #accepted {
+            -moz-transition: all 2s ease;
+            -webkit-transition: all 2s ease;
+            -o-transition: all 2s ease;
+            -ms-transition: all 2s ease;
+            transition: all 2s ease;
+            opacity: 1;
+            -webkit-transform: translateX(0px);
+            -moz-transform: translateX(0);
+            -o-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+            left: 270px;
+        }
+
+        #reddContainer:hover > #coin {
+            -moz-transition: all 2s ease;
+            -webkit-transition: all 2s ease;
+            -o-transition: all 2s ease;
+            -ms-transition: all 2s ease;
+            transition: all 2s ease;
+            -moz-transform: rotate(690deg);
+            -webkit-transform: rotate(690deg);
+            -o-transform: rotate(670deg);
+            -ms-transform: rotate(670deg);
+            transform: rotate(670deg);
+            left: 235px;
+        }
+
+        #textarea {
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            width: 250px;
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -o-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+            padding: 4px;
+            background-color: #fafafa;
+            border: none;
+            font-family: 'Comic Sans MS';
+            font-size: 11px;
+            font-weight: normal;
+            color: #333333;
+        }
+
+        #reddContainer:hover > #textarea {
+            -moz-transition: all 2s ease;
+            -webkit-transition: all 2s ease;
+            -o-transition: all 2s ease;
+            -ms-transition: all 2s ease;
+            transition: all 2s ease;
+            opacity: 1;
+            -webkit-transform: translateX(0);
+            -moz-transform: translateX(0);
+            -o-transform: translateX(0);
+            -ms-transform: translateX(0);
+            transform: translateX(0);
+        }
+
+        input {
+            width: 183px;
+            font-size: 10px;
+            border: none;
+            padding: 5px;
+            background-color: #e9eaee;
+            margin-top: 2px;
+            margin-right: 5px;
+        }
+
+        #wallet {
+            position: relative;
+            top: 4px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div id="reddContainer">
+    <div id="coin">
+    <img src="images/reddcoin.png" width="59" height="59">
+    </div>
+
+    <div id="coinbackground">
+    <div id="textarea" spellcheck="false">
+    <input type="text" value="RYk84Hb4CdrnVKjaS1GKQFjGHyYW2w4Z7d" onclick="this.select();" /><a href="Reddcoin:RYk84Hb4CdrnVKjaS1GKQFjGHyYW2w4Z7d" target="_blank"><img src="images/wallet--arrow.ico" border="0" id="wallet" title="Send to wallet" /></a>
+    </div>
+    <div id="accepted">Reddcoin tips accepted here</div> 
+    </div>
+    </div>
+
+</body>
+</html>
