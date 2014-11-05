@@ -13,3 +13,5 @@ Here is a simple Reddcoin wallet address widget made with CSS3 animations. There
 
 <h2>Like it? I also accept Reddcoin Tips</h2>
 <h3>RYk84Hb4CdrnVKjaS1GKQFjGHyYW2w4Z7d</h3>
+
+<sub>as do I... RgVLsYFgdfFFSTtXJUjKs9f77PvkvZA5eu</sub>
